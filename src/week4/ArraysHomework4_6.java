@@ -74,10 +74,11 @@ public class ArraysHomework4_6 {
             for(int i = 0; i<arr.length; i++){
                 if(arr[i].equals(removeElement)) {
                     arr[i] = "EMPTY";
-                System.out.println(arr[i] + " -->index number : " + i);
-                break; // exit from for loop immediately.
+                    System.out.println(arr[i] + " -->index number : " + i);
+                    break; // exit from for loop immediately.
                 }else if(i == arr.length-1) System.out.println("There is no such an element in the array.");
 
             }
+
         }
 }
