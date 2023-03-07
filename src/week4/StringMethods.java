@@ -20,16 +20,16 @@ public class StringMethods {
         char charAtReturn = str2.charAt(3);
         System.out.println(charAtReturn);
 
-        // concat() method :
+        // concat() method : this method is connecting two Strings.
         String newStr2 = str2.concat(" Programming Language.              ");
         System.out.println(newStr2);
         System.out.println(str1.concat(" Programming Language."));
         System.out.println(newStr2.equals(str2.concat(" Programming Language.")));
 
-        //indexOf() method
+        //indexOf() method :
         System.out.println(str3.indexOf("S"));
 
-        // replace() method
+        // replace() method :
          System.out.println(str3.replace('a','i'));
 
          //startsWith() method

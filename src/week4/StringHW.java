@@ -28,5 +28,6 @@ public class StringHW {
         else if(result == 0) System.out.println("str1 and str2 are equals.");
         else //if(result > 0
             System.out.println("str1 is greater that str2");
+
     }
 }
