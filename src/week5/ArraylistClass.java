@@ -17,9 +17,9 @@ public class ArraylistClass {
         ArrayList<String> birds = new ArrayList<>();
 
         // birds.add("Hawk"); ---> adding the element to ArrayList
-        birds.add("Hawk");
+        birds.add("Hawk"); // index num 0
         System.out.println(birds);
-        birds.add("Test");
+        birds.add("Test"); // index num 1
         birds.add(1, "Robin");
         birds.add(0, "Blue jay");
         birds.add("Cardinal");
@@ -40,7 +40,7 @@ public class ArraylistClass {
         // size() and set() Methods as below. set() method is replacing the element's value
         System.out.println(birds.size());
         birds.set(1, "Welcome to Java");
-        System.out.println(birds.get(0));
+        System.out.println(birds.get(1));
 
 //        Contains() method.
         System.out.println(birds.size());
@@ -87,15 +87,18 @@ public class ArraylistClass {
         System.out.println("arr array's length : " + arr.length);
         System.out.println("arr array's elements " + Arrays.toString(arr));
 
+//        Note: If you update the elements through Array methods or List methods, both array elements
+//        and list elements  will be aﬀected.
+//        Because they point to the same data store.
+        String newArr[] = {"Vitalii", "Mustafa", "Ramazan", "Ali"};
+        List<String> newList = Arrays.asList(newArr);  // Convert array to ArrayList
+        System.out.println(newList);
+        System.out.println("newList ArrayList size is : " + newList.size());
 
+        newList.set(3, "Alex");
+        System.out.println(newArr[3]);
 
-
-
-
-
-
-
-
+//     throws Unsupported Operation Exception because we are not allowed to change the size of the list. It is ﬁxed size list
 
 
     }
