@@ -20,6 +20,9 @@ public class AccountInfo {
         System.out.println("Surname :" + accountInfo1.surname);
         System.out.println("Phone number :" + accountInfo1.phoneNumber);
         System.out.println("Gender : " + accountInfo1.gender);
+
+        accountInfo.getInfo();
+        accountInfo.printInfo();
     }
 
     // method to get info :
